@@ -64,7 +64,7 @@ export default function Home() {
         />
         <ArtworkItem
           imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868441/original_86eae2c00214a339f9771f4b59d42c30.png?1737493180?bc=0"
-          title="Flowers"
+          title="Flower"
           medium="Paint"
           description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
           year="2023"
