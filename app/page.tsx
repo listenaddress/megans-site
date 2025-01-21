@@ -31,6 +31,13 @@ export default function Home() {
           year="2023"
         />
         <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33869006/original_4fc954d25685e6b00ae1efcf6e8e8564.png?1737494229?bc=0"
+          title="Chair"
+          medium="Maple"
+          year="2023"
+        />
+
+        <ArtworkItem
           imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868103/original_4456458331a4850d2983e49fee99af97.jpg?1737492380?bc=0"
           title="A pastoral scene"
           medium="Oil"
