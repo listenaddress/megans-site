@@ -1,101 +1,82 @@
-import Image from "next/image";
+import NavHeader from "@/components/nav-header"
+import ArtworkItem from "@/components/artwork-item"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="min-h-screen">
+      <NavHeader />
+      <main className="max-w-4xl mx-auto px-4 pb-20">
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33865875/original_4225e5e46258a6625f5cbc52b945725c.gif?1737487263?bc=0"
+          title="Box"
+          medium="Maple"
+          description="Made in Brooklyn, carried on and off the L train between Bushwick and Manhattan, this box traveled with me through the city as it took shape. Through crowded subway cars and busy sidewalks, it witnessed the daily rhythms of urban life, absorbing the energy and character of each neighborhood it passed through."
+          year="2019"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33866118/original_37a8dc8d9cf0626c4a5ca3fc507c5309.png?1737487746?bc=0"
+          title="Readymades found on Bushwick"
+          medium="Canvas"
+          description="Two stark white semicircular forms arranged against a neutral background, suggesting found objects or architectural elements from the urban landscape of Bushwick. The simple geometric shapes create a striking minimalist composition."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868223/original_65c5405d8e20d5ea4c0f6c6926dcf915.png?1737492717?bc=0"
+          title="Flower"
+          medium="Watercolor"
+          description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868276/original_aa48ae76189aa9f2c935da2be52b7cfe.png?1737492831?bc=0"
+          title="Striped moon"
+          medium="Paint"
+          description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868103/original_4456458331a4850d2983e49fee99af97.jpg?1737492380?bc=0"
+          title="A pastoral scene"
+          medium="Oil"
+          description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33866117/original_0b73dbdcaeb1d8af19582f4e9cafc20c.png?1737487743?bc=0"
+          title="animals"
+          medium="Pencil sketch"
+          description="A playful pencil sketch depicting a marine-themed tower: a crab perched atop a fish, balanced on what appears to be a seal, all arranged on a whale shaped like a sundae glass. The composition creates a whimsical vertical hierarchy, with starfish decorative elements at the base."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33866810/original_7e67453d5b8c6dfd1ba0d9c9cd34619f.png?1737488935?bc=0"
+          title="Card for mom"
+          medium="Watercolor"
+          description="For Christmas I made a watercolor card for my mom. It's of her two dogs, Lucy and Ava."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868498/original_7a96c0985b96ad6ae700b183d98f0183.png?1737493328?bc=0"
+          title="Card for mom"
+          medium="Watercolor"
+          description="For Christmas I made a watercolor card for my mom. It's of her two dogs, Lucy and Ava."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868441/original_86eae2c00214a339f9771f4b59d42c30.png?1737493180?bc=0"
+          title="Flowers"
+          medium="Paint"
+          description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
+          year="2023"
+        />
+        <ArtworkItem
+          imageUrl="https://d2w9rnfcy7mm78.cloudfront.net/33868594/original_9e0b1ca752e6354f6f4d2a4f799b30bd.png?1737493441?bc=0"
+          title="Eggs and flowers"
+          medium="Watercolor"
+          description="A pastel painting of a pastoral scene with a farmhouse, a barn, and a field of wildflowers. The painting captures the essence of a peaceful rural landscape, with a sense of tranquility and a hint of nostalgia."
+          year="2023"
+        />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
-  );
+  )
 }
