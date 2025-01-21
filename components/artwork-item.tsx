@@ -5,10 +5,9 @@ interface ArtworkItemProps {
   title: string
   medium: string
   year: string
-  description: string
 }
 
-export default function ArtworkItem({ imageUrl, title, medium, year, description }: ArtworkItemProps) {
+export default function ArtworkItem({ imageUrl, title, medium, year }: ArtworkItemProps) {
   return (
     <div className="my-44">
       <div className="flex flex-col">
@@ -28,7 +27,6 @@ export default function ArtworkItem({ imageUrl, title, medium, year, description
           <p className="text-sm font-semibold">{title}</p>
           <p className="text-sm text-gray-600">{medium}</p>
           <p className="text-sm text-gray-600">{year}</p>
-          {/* <p className="text-sm text-gray-600 max-w-[400px]">{description}</p> */}
         </div>
       </div>
     </div>
